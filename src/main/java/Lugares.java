@@ -27,13 +27,13 @@ public class Lugares {
 
     public static String[] listanombres(){
         GestorArchivo a = new GestorArchivo();
-        String ruta = "D:\\Proyectos\\turismoAraucania\\Lugares\\Lugares\\";
+        String ruta = "C:\\Users\\hp\\Downloads\\turismoAraucania2.0\\Lugares\\Lugares\\";
         String[] lista = a.leerArchivo(ruta).split("\n");
         return lista;
     }
     public static String[] listadatos(){
         GestorArchivo a = new GestorArchivo();
-        String ruta = "D:\\Proyectos\\turismoAraucania\\Lugares\\Localización\\";
+        String ruta = "C:\\Users\\hp\\Downloads\\turismoAraucania2.0\\Lugares\\Localización\\";
         String[] datos = a.leerArchivo(ruta).split("\n");
         return datos;
     }

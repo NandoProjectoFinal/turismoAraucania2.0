@@ -206,7 +206,7 @@ public class Animal {
 
     public static String[] listaSeleccion(String seleccion){
         GestorArchivo a = new GestorArchivo();
-        String ruta = "D:\\Proyectos\\turismoAraucania\\Animales\\"+ seleccion +"\\";
+        String ruta = "C:\\Users\\hp\\Downloads\\turismoAraucania2.0\\Animales\\"+ seleccion +"\\";
         String[] lista = a.leerArchivo(ruta).split("\n");
         return lista;
     }

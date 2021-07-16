@@ -44,7 +44,7 @@ public class Flora {
 
     public static String[] listaseleccion(){
         GestorArchivo a = new GestorArchivo();
-        String ruta = "D:\\Proyectos\\turismoAraucania\\Flora\\Flora\\";
+        String ruta = "C:\\Users\\hp\\Downloads\\turismoAraucania2.0\\Flora\\Flora\\";
         String[] listacontipo = a.leerArchivo(ruta).split("\n");
         return listacontipo;
     }

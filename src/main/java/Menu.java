@@ -40,7 +40,7 @@ public class Menu {
                     Lugares x = new Lugares(nombre[z],localización[z]);
                     System.out.println(x.getNombre());
                     System.out.println(x.getUbicacion());
-                    System.out.println("¿Desea ver más Lugares?/Do you want to see more Places?");
+                    System.out.println("¿Desea ver más lugares?/Do you want to see more Places?");
                     textoSalida();
                     a=salir();
                 }while(a==true);
@@ -54,21 +54,27 @@ public class Menu {
                     Flora fa = new Flora(arr[0],arr[1]);
                     System.out.println(fa.getNombre());
                     System.out.println(fa.getTipo());
-                    System.out.println("Desea ver mas arboles?");
+                    System.out.println("¿Desea ver mas árboles?");
                     textoSalida();
                     a=salir();
                 }while (a==true);
                 break;
             }
             case "3" -> {
-                System.out.println("Lista de los animales nativos de la zona/ List of native animals in the area");
-                a = true;
-                Animal.mostrarAnimales();
-                Animal.seleccionarTipoAnimal();
+                do {
+                    System.out.println("Lista de los animales nativos de la zona/ List of native animals in the area");
+                    a = true;
+                    Animal.mostrarAnimales();
+                    Animal.seleccionarTipoAnimal();
+                    System.out.println("¿Desea ver mas animales?");
+                    textoSalida();
+                    a=salir();
+                }while(a==true);
                 break;
+
             }
             case "4" -> {
-                System.out.println("Desea Salir?");
+                System.out.println("¿Desea Salir?");
                 textoSalida();
                 a=salir();
                 break;
