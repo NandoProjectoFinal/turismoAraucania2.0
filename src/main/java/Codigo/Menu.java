@@ -1,16 +1,9 @@
+package Codigo;
 
-// DISMINUIR ANIMALES
-// PRUEBAS UNITARIAS
-// INTERFAZ GRAFICA
-// UML
-// INFORME
-public class Main {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-        Menu.iniciarPrograma();
-    }
-
-   /* public static void iniciarPrograma() {
+public class Menu {
+    public static void iniciarPrograma() {
         boolean a;
         do {
             menuPrincipal();
@@ -45,8 +38,8 @@ public class Main {
                     Lugares.Lugares();
                     int z = Lugares.seleccion();
                     String[] nombre = Lugares.listanombres();
-                    String[] localización = Lugares.listadatos();
-                    Lugares x = new Lugares(nombre[z],localización[z]);
+                    String[] localizacizacion = Lugares.listadatos();
+                    Lugares x = new Lugares(nombre[z],localizacizacion[z]);
                     System.out.println(x.getNombre());
                     System.out.println(x.getUbicacion());
                     System.out.println("¿Desea ver más Lugares?/Do you want to see more Places?");
@@ -114,8 +107,9 @@ public class Main {
         }while(b==0);
         return a;
     }
+
     public static void textoSalida() {
         System.out.println("[1] Si / yes");
         System.out.println("[2] No / no");
-    }*/
+    }
 }

@@ -1,3 +1,5 @@
+package Codigo;
+
 import java.util.Scanner;
 
 public class Flora {
@@ -9,7 +11,7 @@ public class Flora {
         this.nombre = nombre;
         this.tipo = tipo;
     }
-
+        
     public String getNombre() {
         return nombre;
     }
